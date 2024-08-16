@@ -84,8 +84,11 @@ TEST_F(TestZenohUTransport, toZenohKeyString) {
 	EXPECT_TRUE(
 	    (std::is_base_of_v<transport::ZenohUTransport, ExposeKeyString>));
 
-	EXPECT_EQ(
-	    ExposeKeyString::toZenohKeyString(
+	EXPECT_EQ(ExposeKeyString::toZenohKeyString(
+	        "10.23.45.67", create_uuri("", 0x10AB, 3, 0x80CD), std::nullopt),
+	    "up/10.23.45.67/10AB/3/80CD/{}/{}/{}/{}");
+
+	EXPECT_EQ(ExposeKeyString::toZenohKeyString(
 	        "", create_uuri("192.168.1.100", 0x10AB, 3, 0x80CD), std::nullopt),
 	    "up/192.168.1.100/10AB/3/80CD/{}/{}/{}/{}");
 

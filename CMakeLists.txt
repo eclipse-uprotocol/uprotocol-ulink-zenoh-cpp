@@ -18,6 +18,8 @@ find_package(up-core-api REQUIRED)
 find_package(up-cpp REQUIRED)
 find_package(zenohcpp REQUIRED)
 
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS}  -fprofile-arcs -ftest-coverage")
+
 # TODO NEEDED?
 #add_definitions(-DSPDLOG_FMT_EXTERNAL)
 
