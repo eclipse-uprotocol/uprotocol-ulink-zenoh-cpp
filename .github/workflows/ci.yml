@@ -38,8 +38,8 @@ jobs:
       - name: Build zenohcpp conan package
         shell: bash
         run: |
-          conan create --version 1.0.0-rc5 up-conan-recipes/zenohc-tmp/prebuilt
-          conan create --version 1.0.0-rc5 up-conan-recipes/zenohcpp-tmp/from-source
+          conan create --version 1.0.0-rc6 up-conan-recipes/zenohc-tmp/prebuilt
+          conan create --version 1.0.0-rc6 up-conan-recipes/zenohcpp-tmp/from-source
 
       - name: Fetch up-transport-zenoh-cpp
         uses: actions/checkout@v4

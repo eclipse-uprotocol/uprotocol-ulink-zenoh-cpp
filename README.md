@@ -20,9 +20,10 @@ from [up-cpp][cpp-api-repo].
 Using the recipes found in [up-conan-recipes][conan-recipe-repo], build these
 Conan packages:
 
-1. [up-core-api][spec-repo] - `conan create --version 1.6.0 --build=missing up-core-api/release`
-1. [up-cpp][cpp-api-repo] - `conan create --version 1.0.1-rc1 --build=missing up-cpp/release`
-2. [zenoh-c][zenoh-repo] - `conan create --version 0.11.0 zenoh-tmp/from-source`
+1. [up-core-api][spec-repo] - `conan create --version 1.6.0-alpha3 --build=missing up-core-api/release`
+1. [up-cpp][cpp-api-repo] - `conan create --version 1.0.1 --build=missing up-cpp/release`
+2. [zenoh-c][zenoh-repo] - `conan create --version 1.0.0-rc6 zenohc-tmp/prebuilt`
+2. [zenoh-c][zenoh-repo] - `conan create --version 1.0.0-rc6 zenohcpp-tmp/from-source`
 
 **NOTE:** all `conan` commands in this document use  Conan 2.x syntax. Please
 adjust accordingly when using Conan 1.x.

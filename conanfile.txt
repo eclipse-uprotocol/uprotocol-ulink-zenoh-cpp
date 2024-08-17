@@ -1,7 +1,7 @@
 [requires]
 up-cpp/[^1.0.1]
-zenohcpp/1.0.0-rc5
-zenohc/1.0.0-rc5
+zenohcpp/1.0.0-rc6
+zenohc/1.0.0-rc6
 spdlog/[~1.13]
 up-core-api/[~1.6, include_prerelease]
 protobuf/[~3.21]
